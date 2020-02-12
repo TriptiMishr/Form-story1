@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <h1 style="margin-left: 500px;color: white;"><u>Expense Management System</u></h1>
+<div class="wrapper">
+
+    <form action="#">
+      <div class="billing">
+         <label for="Billing">Billing</label>
+         <select id="Billing" name="Billing">
+           <option value="Talview">Talview</option>
+           <option value="client">Client</option>
+         </select>
+         <select id="Client" name="Client">
+           <option value="Client1">Client1</option>
+           <option value="Client2">Client2</option>
+           <option value="Client3">Client3</option>
+         </select>
+
+         <input type="text" id="others"  name="others" placeholder="Other-clients">
+       </div>
+
+       <div class="expense-category">
+        <label>Expense Category</label>
+        <select id="expense-category" name="expense-category">
+           <option value="Food">Food</option>
+           <option value="Travel">Travel</option>
+           <option value="Stay">Stay</option>
+           <option value="Others">Others</option>
+           <input type="text" id="others"  name="others" placeholder="If others, add remarks...">
+        </select>
+
+         
+       </div>
+       <div>
+         <label>Bill invoice</label>
+         <button>File Browse</button>
+         <label>Amount</label>
+         <input type="text" name="amt" placeholder="Enter Amount">
+       </div>
+
+
+       <div>
+         <label>Bill date</label>
+         <input type="number" name="day" placeholder="Day">
+         <input type="number" name="month" placeholder="Month">
+         <input type="number" name="year" placeholder="Year">
+       </div>
+
+       <div>
+         <h3>Food:</h3>
+         <br>
+         <label>No of Diners</label>
+         <input type="number" name="nod" placeholder="Enter No of diners..">
+
+       </div>
+
+
+      <div>
+         <h3>Travel:</h3>
+         <br>
+         <label>Mode:</label>
+          <select id="mode" name="mode">
+           <option value="Train">Train</option>
+           <option value="Bus">Bus</option>
+           <option value="Flight">Flight</option>
+           <option value="Other">Other</option>
+         </select>
+         <br>
+        <label>From</label>
+         <input type="text" name="from" placeholder="From..">
+         <br>
+        <label>To</label>
+         <input type="text" name="to" placeholder="To..">
+         <br>
+
+         
+
+       </div>
+
+
+
+      <div>
+         <h3>Stay:</h3>
+         <br>
+         <label>From</label>
+         <input type="text" name="fromdate" placeholder="FromDate..">
+         <label>To</label>
+         <input type="text" name="to" placeholder="ToDate..">
+         <br>
+         <label>Place of Stay</label>
+         <input type="text" name="pos" placeholder="Enter Place where you stay..">
+         <br>
+          <label>Destination</label>
+         <input type="text" name="dest" placeholder="Enter your Destination ( Country/State/City)..">
+         <br>
+     </div>
+
+  <input type="submit" value="Save" style="background-color: #303030;color: white;border: none;">
+  <button style="background-color: #303030; color: white;border: none;">Cancel</button>
+
+
+
+    </form>
+  </div>     
+</body>
+</html>
