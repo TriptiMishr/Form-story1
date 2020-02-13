@@ -5,17 +5,17 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <h1 style="margin-left: 500px;color: white;"><u>Expense Management System</u></h1>
+  <h1 style="margin-left: 550px;color: white;"><u>Expense Management System</u></h1>
 <div class="wrapper">
 
     <form action="#">
       <div class="billing">
          <label for="Billing">Billing</label>
-         <select id="Billing" name="Billing">
+         <select id="Billing" name="Billing" style="margin-left: 10px;margin-right: 10px;">
            <option value="Talview">Talview</option>
            <option value="client">Client</option>
          </select>
-         <select id="Client" name="Client">
+         <select id="Client" name="Client" style="margin-left: 10px; margin-right: 10px;">
            <option value="Client1">Client1</option>
            <option value="Client2">Client2</option>
            <option value="Client3">Client3</option>
@@ -26,8 +26,8 @@
 
        <div class="expense-category">
         <label>Expense Category</label>
-        <select id="expense-category" name="expense-category">
-           <option value="Food">Food</option>
+        <select id="expense-category" name="expense-category" style="margin-left: 10px;margin-right: 10px;">
+           <option value="Food" onclick="Food()">Food</option>
            <option value="Travel">Travel</option>
            <option value="Stay">Stay</option>
            <option value="Others">Others</option>
@@ -36,26 +36,32 @@
 
          
        </div>
+
+
+
        <div>
          <label>Bill invoice</label>
-         <button>File Browse</button>
+         <button style="margin-left:20px;">File Browse</button>
          <label>Amount</label>
          <input type="text" name="amt" placeholder="Enter Amount">
+         <button onclick="myFunction()">+</button>
        </div>
+       <div id="demo" style="padding-left:100px;"></div>
+    
 
 
        <div>
          <label>Bill date</label>
-         <input type="number" name="day" placeholder="Day">
-         <input type="number" name="month" placeholder="Month">
-         <input type="number" name="year" placeholder="Year">
+         <input type="number" name="day" placeholder="D" style="padding-left:0px;padding-right: 0px; ">
+         <input type="number" name="month" placeholder="M" style="padding-left:10px;padding-right: 10px;">
+         <input type="number" name="year" placeholder="Y" style="padding-left:10px;padding-right: 10px;">
        </div>
 
        <div>
          <h3>Food:</h3>
          <br>
          <label>No of Diners</label>
-         <input type="number" name="nod" placeholder="Enter No of diners..">
+         <input type="number" name="nod" placeholder="Enter No of diners.." style="width: 30%;">
 
        </div>
 
@@ -64,7 +70,7 @@
          <h3>Travel:</h3>
          <br>
          <label>Mode:</label>
-          <select id="mode" name="mode">
+          <select id="mode" name="mode" style="margin-left: 10px;">
            <option value="Train">Train</option>
            <option value="Bus">Bus</option>
            <option value="Flight">Flight</option>
@@ -75,7 +81,7 @@
          <input type="text" name="from" placeholder="From..">
          <br>
         <label>To</label>
-         <input type="text" name="to" placeholder="To..">
+         <input type="text" name="to" placeholder="To.." style="margin-left: 28px;">
          <br>
 
          
@@ -84,28 +90,46 @@
 
 
 
-      <div>
+      <div style="margin-top: 10px;">
          <h3>Stay:</h3>
          <br>
          <label>From</label>
          <input type="text" name="fromdate" placeholder="FromDate..">
-         <label>To</label>
-         <input type="text" name="to" placeholder="ToDate..">
+         <label >To</label>
+         <input type="text" name="to" placeholder="ToDate.." >
          <br>
          <label>Place of Stay</label>
          <input type="text" name="pos" placeholder="Enter Place where you stay..">
          <br>
           <label>Destination</label>
-         <input type="text" name="dest" placeholder="Enter your Destination ( Country/State/City)..">
+         <input type="text" name="dest" placeholder="Enter your Destination ( Country/State/City).." style="margin-left: 19px;">
          <br>
      </div>
+     <br>
 
-  <input type="submit" value="Save" style="background-color: #303030;color: white;border: none;">
-  <button style="background-color: #303030; color: white;border: none;">Cancel</button>
+  <input type="submit" value="Save" style="background-color: #303030;color: white;border: none;  padding: 15px 80px;
+  text-align: center;">
+  <button style="background-color: #303030; color: white;border: none; padding: 15px 80px;
+  text-align: center;float: right;">Cancel</button>
 
 
 
     </form>
-  </div>     
+  </div> 
+
+
+
+        <script type="text/javascript">
+         function myFunction()
+         {
+          document.getElementById("demo").innerHTML= '<button >File Browse</button> <label>Amount</label><input type="text" name="amt" placeholder="Enter Amount"> ';
+         }
+       
+      </script>   
+
+
+    
+
+ 
 </body>
 </html>
